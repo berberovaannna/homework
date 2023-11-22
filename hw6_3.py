@@ -33,5 +33,7 @@ print(f"Результат умножения элементов списка м
 for i in num_list:
     if i > max:
         max= i
+index=num_list.index(max)+1
 print(f"Исходный список: {num_list}")
 print(f"Максимальное значение: {max}")
+print(f"Номер максимального элемента списка: {index}")
