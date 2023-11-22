@@ -1,4 +1,8 @@
-string = input('Введите строку: ')
+string1 = input('Введите строку: ')
+string = ""
+for probel in string1:
+    if probel != " ":
+        string += probel
 small_letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 small = ['а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ь', 'ы', 'э', 'ю', 'я']
 big_letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',]
@@ -13,6 +17,7 @@ for i in range(len(string)):
             elif string[i] == big[j]:
                 new_str += small[j]
                 break
+
     else:
         new_str += string[i]
 
