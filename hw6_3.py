@@ -14,7 +14,7 @@ while True:
 
 while True:
     zero_count = 0
-    num_list = [random.randint(-3000, 3000) for i in range(n)]
+    num_list = [random.randint(-10, 10) for i in range(n)]
     for i in num_list:
         if i == 0:
             zero_count += 1
